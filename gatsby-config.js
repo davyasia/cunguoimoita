@@ -6,6 +6,21 @@ module.exports = {
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-emotion",
+    {
+      resolve: 'gatsby-plugin-material-ui',
+      options: {
+        stylesProvider: {
+          injectFirst: true
+        }
+      }
+    },
+    "gatsby-theme-material-ui",
+    {
+      resolve: "gatsby-plugin-layout",
+      options: {
+        component: require.resolve('./src/layout/Default/index.jsx')
+      }
+    },
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
