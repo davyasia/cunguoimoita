@@ -60,5 +60,14 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "products",
+        path: "./content/product/",
+      },
+      __key: "products",
+    },
+    'gatsby-transformer-remark',
   ],
 };
